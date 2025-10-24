@@ -1,0 +1,63 @@
+
+
+    <div class="bg-success m-3 p-3">
+            <h2>Please provide feedback. You may do so anonymously by leaving the name and email fields empty.</h2>
+    </div>
+    
+    <div class="row">
+        <div class="col-md-4">
+
+            <h2>Instructions</h2>
+            <p>As one of our students, your thoughts, feedback and comments are important to us. </p>
+            <p>Please send them using this form.</p>
+            <p>If you would like us to follow up with you, include your contact information.</p>
+
+        </div>
+
+
+        <div class="col-md-8">    
+            <form action="/submit-feedback" method="POST">
+
+                
+
+                <div class="m-1 p-1">
+                    <label class="form-label" for="student-name">Name</label>
+                    <input class="form-control" id="student-name" name="student-name" type="text">
+                </div>
+                <br>
+                <div class="m-1 p-1">
+                    <label class="form-label" for="student-email">Email</label>
+                    <input class="form-control" id="student-email" name="student-email" type="email">
+                </div>
+                <br>
+
+                <div class="m-1 p-1">
+                    <label class="form-label" for="student-comment">Comment</label>
+                    <br>
+                    <textarea class="form-control" required id="student-comment" name="student-comment"></textarea>
+                </div>
+                <br>
+
+
+                <p>Are you a current student?</p>
+                <div class="form-check">
+                    <input class="form-check-input" id="current-student-yes" name="current-student" type="radio" value="yes">
+                    <label class="form-check-label" for="current-student-yes">Yes</label>
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" id="current-student-no" name="current-student" type="radio" value="no">
+                    <label class="form-check-label" for="current-student-no">No</label>
+                </div>
+
+                
+                <br>
+
+
+                <input class="btn btn-primary m-2 p-2" id="submit" type="submit">
+
+            </form>
+        </div>
+    </div>
+
+
