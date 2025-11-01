@@ -8,4 +8,15 @@
 <h3>Comments: {{ comments }}</h3>
 <h3>Current Student: {{ currentStudent }}</h3>
 
+<br>
+<h2>Departments Contacted</h2>
+
+<ul>
+
+    {{#each departmentList}}
+        <li>{{ this }}</li>
+        {{/each}}
+
+</ul>
+
 <p><a href="/">Back to home page</a></p>
